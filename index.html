@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center; /* 본문 내용을 중앙 정렬 */
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto; /* 폼을 화면 가운데로 이동 */
+            text-align: left; /* 폼 내부 요소들을 왼쪽 정렬 */
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>맞춤형 여가 활동 추천</h1>
+    <p>This is a simple web page created with HTML.</p>
+    
+    <h2>정보를 입력해 주세요.</h2>
+    <form action="/submit" method="post">
+        <label for="age">나이:</label><br>
+        <input type="text" id="age" name="age"><br>
+        <label for="gender">성별:</label><br>
+        <input type="text" id="gender" name="gender"><br>
+        <label for="education">학력:</label><br>
+        <input type="text" id="education" name="education"><br>
+        <label for="income">소득:</label><br>
+        <input type="text" id="income" name="income"><br>
+        <label for="marital_status">결혼 유무:</label><br>
+        <input type="text" id="marital_status" name="marital_status"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
